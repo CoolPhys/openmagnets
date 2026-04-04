@@ -1,0 +1,10 @@
+{
+  "fortran.linter.compiler": "gfortran",
+  "fortran.linter.includePaths": [
+    "${workspaceFolder}/fortran/**"
+  ],
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": [
+    "tests"
+  ]
+}

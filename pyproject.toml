@@ -1,0 +1,55 @@
+[build-system]
+requires = ["meson-python>=0.17", "numpy>=2.0"]
+build-backend = "mesonpy"
+
+[project]
+name = "openmagnets"
+version = "0.1.0"
+description = "Magnetostatic solver"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "CoolPhys / ok3D Team" }
+]
+keywords = [
+  "magnetostatics",
+  "electromagnetics",
+  "simulation",
+  "physics",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Fortran",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+  "numpy>=2.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/maklecule/openmagnets"
+Repository = "https://github.com/maklecule/openmagnets"
+Issues = "https://github.com/maklecule/openmagnets/issues"
+Releases = "https://github.com/maklecule/openmagnets/releases"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "meson>=1.0",
+  "meson-python>=0.17",
+  "build>=1.2",
+  "twine>=5.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

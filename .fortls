@@ -1,0 +1,6 @@
+{
+  "source_dirs": ["fortran/**"],
+  "hover_signature": true,
+  "use_signature_help": true,
+  "lowercase_intrinsics": true
+}
