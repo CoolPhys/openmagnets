@@ -1,4 +1,4 @@
-project('openmagnets', 'fortran', version: '0.1.0')
+project('openmagnets', 'fortran', version: '0.1.1')
 
 fc = meson.get_compiler('fortran')
 if fc.get_id() == 'gcc'
